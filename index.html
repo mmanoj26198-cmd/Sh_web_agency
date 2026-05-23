@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sh Web Agency</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Inter, sans-serif;
+}
+
+body{
+  background:#070A12;
+  color:white;
+  overflow-x:hidden;
+}
+
+/* NAV */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 8%;
+  position:fixed;
+  width:100%;
+  top:0;
+  background:rgba(7,10,18,0.7);
+  backdrop-filter: blur(10px);
+}
+
+nav h2{
+  font-weight:800;
+  letter-spacing:1px;
+}
+
+nav a{
+  color:#cbd5e1;
+  text-decoration:none;
+  margin-left:20px;
+  font-size:14px;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:0 10%;
+  background: radial-gradient(circle at top, #1d4ed8, #070A12);
+}
+
+.hero h1{
+  font-size:52px;
+  font-weight:800;
+  animation:fade 1s ease;
+}
+
+.hero p{
+  margin-top:15px;
+  color:#cbd5e1;
+  font-size:18px;
+  max-width:600px;
+}
+
+.btn{
+  margin-top:25px;
+  padding:14px 28px;
+  background:linear-gradient(90deg,#22c55e,#16a34a);
+  color:white;
+  border:none;
+  border-radius:12px;
+  font-weight:700;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:scale(1.05);
+}
+
+/* SECTIONS */
+section{
+  padding:80px 10%;
+  text-align:center;
+}
+
+h2{
+  font-size:36px;
+  margin-bottom:15px;
+}
+
+/* FEATURES */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+  margin-top:40px;
+}
+
+.card{
+  background:rgba(255,255,255,0.05);
+  padding:25px;
+  border-radius:16px;
+  border:1px solid rgba(255,255,255,0.1);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+  border-color:#22c55e;
+}
+
+/* PROCESS */
+.step{
+  background:#0b1220;
+  padding:20px;
+  border-radius:12px;
+  margin:10px;
+}
+
+/* CTA */
+.cta{
+  background:linear-gradient(135deg,#1d4ed8,#22c55e);
+  padding:60px 10%;
+  border-radius:20px;
+}
+
+/* FOOTER */
+footer{
+  padding:30px;
+  text-align:center;
+  color:#94a3b8;
+  background:#05060c;
+}
+
+/* WHATSAPP */
+.wa{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  padding:15px 18px;
+  border-radius:50px;
+  text-decoration:none;
+  color:white;
+  font-weight:700;
+}
+
+@keyframes fade{
+  from{opacity:0; transform:translateY(-20px);}
+  to{opacity:1; transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <h2>Sh Web Agency</h2>
+  <div>
+    <a href="#services">Services</a>
+    <a href="#process">Process</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>We Build Websites That Bring Real Customers</h1>
+  <p>Not just design — we create websites that turn visitors into paying customers for your business.</p>
+  <a class="btn" href="https://wa.me/919650787601">Get Free Strategy</a>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <h2>What We Do</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Business Websites</h3>
+      <p>High converting websites for shops & companies</p>
+    </div>
+
+    <div class="card">
+      <h3>Landing Pages</h3>
+      <p>Pages that turn traffic into leads & calls</p>
+    </div>
+
+    <div class="card">
+      <h3>Website Redesign</h3>
+      <p>Turn old websites into modern premium designs</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <h2>How It Works</h2>
+
+  <div class="grid">
+    <div class="step">1. You Contact Us</div>
+    <div class="step">2. We Plan Your Website</div>
+    <div class="step">3. We Build & Launch in 2–3 Days</div>
+    <div class="step">4. You Start Getting Customers</div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section>
+  <h2>Why Businesses Choose Us</h2>
+
+  <div class="grid">
+    <div class="card">⚡ Fast Delivery</div>
+    <div class="card">📱 Mobile Optimized</div>
+    <div class="card">💰 Affordable Pricing</div>
+    <div class="card">📈 Customer Growth Focused</div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2>Ready to Grow Your Business?</h2>
+  <p>Get a professional website that actually brings customers.</p>
+  <br>
+  <a class="btn" href="https://wa.me/919650787601">Start Now on WhatsApp</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 Sh Web Agency | Built for Business Growth
+</footer>
+
+<!-- WHATSAPP -->
+<a class="wa" href="https://wa.me/919650787601">WhatsApp</a>
+
+</body>
+</html>
